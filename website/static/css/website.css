@@ -92,7 +92,7 @@ body {
   border-bottom-color: #fff;
 }
 
-/*@media (min-width: 48em) {
+/*@media (max-width: 48em) {
   .masthead-brand {
     float: left;
   }
@@ -129,7 +129,7 @@ body {
  * Affix and center
  */
 
-@media (min-width: 10em) {
+@media (max-width: 62em) {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
@@ -146,8 +146,18 @@ body {
   /* Handle the widths */
   .masthead,
   .mastfoot,
+
+/*  .cover {
+  padding: 50 0;
+  color: #000000;
+  }*/
+
   .cover-container {
-    width: 50%; /* Must be percentage or pixels for horizontal alignment */
+    width: 40%;
+  }
+
+  .cover {
+    padding: 90 0;
   }
 }
 
@@ -159,6 +169,10 @@ body {
   .mastfoot {
     position: fixed;
     bottom: 0;
+  }
+    /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
   }
 
   .masthead,
