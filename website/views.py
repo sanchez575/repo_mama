@@ -45,3 +45,6 @@ def inicio(request):
 def contacto(request):
     return render(request, 'main/contacto.html', {})
 
+def servicios(request):
+    return render(request, 'main/servicios.html', {})
+
