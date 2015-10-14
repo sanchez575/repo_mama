@@ -39,3 +39,9 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'main/post_edit.html', {'form': form})
 
+def inicio(request):
+    return render(request, 'main/inicio.html', {})
+
+def contacto(request):
+    return render(request, 'main/contacto.html', {})
+
