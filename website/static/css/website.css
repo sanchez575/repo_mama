@@ -121,14 +121,14 @@ body {
  * Affix and center
  */
 
-@media (max-width: 62em) {
+@media (max-width: 40em) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    position: static;
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    position: static;
     bottom: 0;
   }
   /* Start the vertical centering */
@@ -137,17 +137,41 @@ body {
   }
   /* Handle the widths */
   .masthead,
-  .mastfoot,
+  .mastfoot {
+    width: 100%;
+  }
+
   .cover-container {
     width: 50%;
   }
 
-  .cover {
+/*  .cover {
     padding: 110 0;
+  }*/
+}
+
+@media (min-width: 40em) {
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+    /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 50%;
   }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 60em) {
   .masthead {
     position: fixed;
     top: 0;
