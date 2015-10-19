@@ -121,7 +121,31 @@ body {
  * Affix and center
  */
 
-@media (max-width: 40em) {
+@media only screen and (min-width : 320px) {
+  .masthead {
+    position: static;
+    top: 0;
+  }
+  .mastfoot {
+    position: static;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot {
+    width: 100%;
+  }
+
+  .cover-container {
+    width: 80%;
+  }  
+}
+
+@media (min-width: 30em) {
   /* Pull out the header and footer */
   .masthead {
     position: static;
